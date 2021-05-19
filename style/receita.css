@@ -1,0 +1,45 @@
+:root{
+    --laranja:#fc7405;
+    --preto: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-recipe{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+.video{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.recipe{
+    width: 45%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+}
+
+.container-recipe .recipe h3{
+    color: var(--laranja);
+}
+
+.container-recipe .recipe h4{
+    text-decoration: underline;
+}
+
+.container-recipe .recipe ul{
+    margin-bottom: 2%;
+}

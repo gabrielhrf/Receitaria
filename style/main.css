@@ -1,0 +1,131 @@
+:root{
+    --laranja:#fc7405;
+    --preto: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* elementos base */
+body{
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--laranja);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 4vh;
+    margin-left: 10px;
+}
+
+header nav a{
+    text-align: center;
+    text-decoration: none;
+    color: #AAA;
+    padding: 10px 20px;
+    transition: .3s ease all;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+header nav a:hover{
+    color: var(--laranja);
+    background-color: rgba(255,255,255,1);
+    
+}
+
+#inicio{
+    background-color: white;
+    color: var(--laranja)
+}
+
+#inicio:hover{
+    background-color: var(--laranja);
+    color: white;
+}
+
+/* filme principal */
+
+.filme-principal{
+    font-size: 2vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)100%), url('/img/capa-house.jpg');
+    background-size: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.filme-principal .descricao{
+    margin-top: 1%;
+    margin-bottom: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.filme-principal .titulo{
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    transition: .3s ease all;
+    font-weight: bold;
+    background-color: var(--laranja);
+}
+
+.botao:hover{
+    background-color: white;
+    color: var(--preto);
+}
+
+i{
+    margin-right: 8px;
+}
+.container{
+    margin-left: 10px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
+.subtitle{
+    margin-top: 3vh;
+}
+
+hr{
+    margin-bottom: 2vh;
+}
+
